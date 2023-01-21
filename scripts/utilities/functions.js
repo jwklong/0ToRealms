@@ -1,10 +1,10 @@
 import Finite from '../layers/Finite.js'
 
 const functions = {
-	loadData() {
+	loadData(data) {
 		let save = undefined
 		try {
-			save = JSON.parse(unescape(atob(localStorage.getItem('zerotorealms'))))
+			save = JSON.parse(unescape(atob(localStorage.getItem('zerotorealms')))) || data
 			console.debug("Save loaded")
 		} catch (e) {
 			console.debug("No save detected")
@@ -53,8 +53,6 @@ const functions = {
 				const file = input.files[0]
 				var reader = new FileReader();
 				reader.onload = function() {
-					document.body.removeChild(input)
-					console.log(reader.result)
 					func(reader.result)
 				};
 				reader.readAsText(file);

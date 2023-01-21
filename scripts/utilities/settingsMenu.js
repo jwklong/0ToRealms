@@ -15,10 +15,7 @@ export default function setupSettingsMenu() {
 		functions.loadData(await navigator.clipboard.readText())
 	})
 	document.getElementById('settingsimportfile').addEventListener("click", async () => {
-		functions.getFile('.0tr', (data) => {
-			startGame()
-			functions.loadData(data)
-		})
+		functions.getFile('.0tr', (data) => functions.loadData(data))
 	})
 	document.getElementById('settingshardreset').addEventListener("click", () => {
 		for (let i = 0; i < 3; i++) {
