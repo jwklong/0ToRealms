@@ -1,0 +1,18 @@
+:root {
+	--primary-color: #202020;
+	--secondary-color: #303030;
+	--active-color: #ffc400;
+	
+	--inactive-primary: #606060;
+	--inactive-secondary: #404040;
+	
+	--text-color: #ffffff;
+	
+	--formula-background: #000000;
+	--formula-color: #fff;
+
+	--infinite-secondary: #c0c;
+	--infinite-active: #f0f;
+
+	--border-width: 1px;
+}

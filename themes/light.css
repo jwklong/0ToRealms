@@ -1,0 +1,16 @@
+:root {
+	--primary-color: #fff;
+	--secondary-color: #dbf;
+	--active-color: #b8f;
+	
+	--inactive-primary: #ddd;
+	--inactive-secondary: #aaa;
+	
+	--text-color: #000;
+	
+	--formula-background: #000000;
+	--formula-color: #fff;
+
+	--infinite-secondary: #ffeca8;
+	--infinite-active: #ffe070;
+}
