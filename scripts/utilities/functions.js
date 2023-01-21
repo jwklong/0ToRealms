@@ -4,9 +4,11 @@ const functions = {
 	loadData(data) {
 		let save = undefined
 		try {
-			save = JSON.parse(unescape(atob(localStorage.getItem('zerotorealms')))) || data
+			save = JSON.parse(unescape(atob(data || localStorage.getItem('zerotorealms'))))
 			console.debug("Save loaded")
 		} catch (e) {
+			
+			console.warn(e)
 			console.debug("No save detected")
 		}
 		if (save) {
